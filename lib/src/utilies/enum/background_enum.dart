@@ -1,6 +1,7 @@
 import 'dart:ui';
 
 import 'package:custom_toast_message/src/constants/color_constants.dart';
+import 'package:custom_toast_message/src/utilies/utilies.dart';
 import 'package:flutter/foundation.dart' show describeEnum;
 import 'package:flutter/material.dart';
 
@@ -41,15 +42,16 @@ extension ColorExtension on BackgroundColor {
   String get getText {
     switch (this) {
       case BackgroundColor.success:
-        return "Success";
+        return capitalizeText(BackgroundColor.success);
       case BackgroundColor.info:
-        return "Info";
+        return capitalizeText(BackgroundColor.info);
       case BackgroundColor.warning:
-        return "Warning";
+        return capitalizeText(BackgroundColor.warning);
       case BackgroundColor.error:
-        return "Error";
+        return capitalizeText(BackgroundColor.error);
       default:
         return "";
     }
   }
 }
+
