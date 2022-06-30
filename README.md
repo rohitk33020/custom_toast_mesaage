@@ -1,4 +1,4 @@
-# custom_toast_message
+# Custom toast message
 
 A new Flutter project.
 
